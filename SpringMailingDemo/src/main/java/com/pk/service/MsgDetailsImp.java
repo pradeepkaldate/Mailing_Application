@@ -37,6 +37,7 @@ public class MsgDetailsImp implements IMsgDetails {
 	  help.setText(msg);
 	  help.addAttachment("Nature IMAGE", new ClassPathResource("nature.jpg"));
 	  sender.send(message);
+	  System.out.println("Done");
 	  return "mail Send";
   }
 }
